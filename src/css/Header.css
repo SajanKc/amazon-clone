@@ -50,6 +50,7 @@
   display: flex;
   align-items: center;
   color: #ffffff;
+  padding: 10px;
 }
 
 .header__basketCount {
