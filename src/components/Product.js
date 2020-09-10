@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../css/Product.css';
 import { useStateValue } from './StateProvider';
 
 function Product({ id, title, image, price, rating }) {
+
     const [{ basket }, dispatch] = useStateValue();
 
     const addToBasket = () => {
@@ -20,7 +21,7 @@ function Product({ id, title, image, price, rating }) {
     };
 
     return (
-        <div className="product">
+        <div className="product" data-aos="fade-up">
             <div className="product__info">
                 <p>{title}</p>
                 <p className="product__price">
